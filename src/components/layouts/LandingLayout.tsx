@@ -3,6 +3,7 @@ import { Group, Stack, Text, Title } from '@mantine/core';
 import { contactLinks } from '../../constants/ContactLinks';
 import NavBar from '../ui/NavBar/NavBar';
 import UnderlinedLink from '../ui/UnderlinedLink/UnderlinedLink';
+import WavingHandEmoji from '../ui/WavingHandEmoji/WavingHandEmoji';
 
 function LandingLayout() {
   return (
@@ -11,7 +12,9 @@ function LandingLayout() {
 
       <Stack pt="90px" px={{ base: '6vw', lg: '10vw' }}>
         <Stack mt="240px">
-          <Title fz={{ base: 'md', lg: 'lg' }}>Hey there! 👋</Title>
+          <Title fz={{ base: 'md', lg: 'lg' }}>
+            Hey there! <WavingHandEmoji />
+          </Title>
 
           <Title fz={{ base: 'lg', lg: 'xl' }} maw="750px">
             I'm Jason, and I love to build software that helps others.
