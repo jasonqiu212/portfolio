@@ -1,84 +1,70 @@
-import LangChain from '../assets/langchain.png';
-import Mantine from '../assets/mantine.svg';
+import { icons } from './Icons';
 
 export const experiencedLanguages = [
   {
     label: 'TypeScript',
-    iconUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
+    iconUrl: icons['TypeScript'],
   },
   {
     label: 'Python',
-    iconUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
+    iconUrl: icons['Python'],
   },
   {
     label: 'Java',
-    iconUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
+    iconUrl: icons['Java'],
   },
   {
     label: 'LaTeX',
-    iconUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg',
+    iconUrl: icons['LaTeX'],
   },
 ];
 
 export const experiencedFrameworksAndTools = [
   {
     label: 'React',
-    iconUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+    iconUrl: icons['React'],
   },
   {
     label: 'Mantine',
-    iconUrl: Mantine,
+    iconUrl: icons['Mantine'],
   },
   {
     label: 'PostgreSQL',
-    iconUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+    iconUrl: icons['PostgreSQL'],
   },
   {
     label: 'Docker',
-    iconUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg',
+    iconUrl: icons['Docker'],
   },
   {
     label: 'Git',
-    iconUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+    iconUrl: icons['Git'],
   },
 ];
 
 export const familiarSkills = [
   {
     label: 'Redux',
-    iconUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg',
+    iconUrl: icons['Redux'],
   },
   {
     label: 'LangChain',
-    iconUrl: LangChain,
+    iconUrl: icons['LangChain'],
   },
   {
     label: 'Swift',
-    iconUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg',
+    iconUrl: icons['Swift'],
   },
   {
     label: 'C',
-    iconUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg',
+    iconUrl: icons['C'],
   },
   {
     label: 'Angular',
-    iconUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
+    iconUrl: icons['Angular'],
   },
   {
     label: 'Ruby on Rails',
-    iconUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain.svg',
+    iconUrl: icons['Ruby on Rails'],
   },
 ];
