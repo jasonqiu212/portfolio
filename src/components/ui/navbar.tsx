@@ -1,17 +1,17 @@
 import {
-  ActionIcon,
   Container,
   Group,
+  Switch,
   Title,
   useComputedColorScheme,
   useMantineColorScheme,
 } from '@mantine/core';
-import { IconMoon, IconSun } from '@tabler/icons-react';
+import { IconMoonFilled, IconSunFilled } from '@tabler/icons-react';
 
 import UnderlinedButton from './UnderlinedButton/UnderlinedButton';
 
 function NavBar() {
-  const { setColorScheme } = useMantineColorScheme();
+  const { setColorScheme } = useMantineColorScheme({ keepTransitions: true });
   const computedColorScheme = useComputedColorScheme();
   const isLightMode = computedColorScheme === 'light';
 
@@ -31,15 +31,18 @@ function NavBar() {
           <UnderlinedButton label="skills" />
           <UnderlinedButton label="experience" />
           <UnderlinedButton label="projects" />
-
-          <ActionIcon
-            variant="transparent"
-            onClick={() => setColorScheme(isLightMode ? 'dark' : 'light')}
-            size="xl"
-            aria-label="Toggle color scheme"
-          >
-            {isLightMode ? <IconMoon stroke={1.5} /> : <IconSun stroke={1.5} />}
-          </ActionIcon>
+          <Switch
+            checked={!isLightMode}
+            onChange={() => setColorScheme(isLightMode ? 'dark' : 'light')}
+            size="lg"
+            color="slate.7"
+            onLabel={
+              <IconMoonFilled size={22} color="var(--mantine-color-indigo-4)" />
+            }
+            offLabel={
+              <IconSunFilled size={22} color="var(--mantine-color-red-6)" />
+            }
+          />{' '}
         </Group>
       </Group>
     </Container>

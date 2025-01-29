@@ -2,6 +2,9 @@
   --mantine-color-text: #000 !important;
 }
 
+/* TODO: Decide colors */
 :root[data-mantine-color-scheme='dark'] {
+  /* --mantine-color-text: var(--mantine-color-yellow-0) !important; */
   --mantine-color-text: #fff !important;
+  --mantine-color-body: var(--mantine-color-slate-9) !important;
 }
