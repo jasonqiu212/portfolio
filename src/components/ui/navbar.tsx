@@ -26,14 +26,14 @@ function NavBar() {
     >
       <Group justify="space-between">
         <Title variant="default">Jason Qiu</Title>
-        <Group>
+        <Group gap="lg">
           <UnderlinedButton label="about me" />
           <UnderlinedButton label="skills" />
           <UnderlinedButton label="experience" />
           <UnderlinedButton label="projects" />
 
           <ActionIcon
-            variant="default"
+            variant="transparent"
             onClick={() => setColorScheme(isLightMode ? 'dark' : 'light')}
             size="xl"
             aria-label="Toggle color scheme"

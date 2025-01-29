@@ -1,5 +1,5 @@
-import LandingLayout from '../components/layouts/landing';
-import AppProvider from './provider';
+import LandingLayout from '../components/layouts/LandingLayout';
+import AppProvider from './Provider';
 
 function App() {
   return (
