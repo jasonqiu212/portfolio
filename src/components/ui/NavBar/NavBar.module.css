@@ -1,0 +1,15 @@
+.dropdown {
+  background-color: var(--mantine-color-body);
+}
+
+.item:hover {
+  background-color: light-dark(
+    var(--mantine-color-gray-2),
+    var(--mantine-color-slate-8)
+  );
+}
+
+.itemLabel {
+  font-size: 18px;
+  font-weight: 600;
+}
