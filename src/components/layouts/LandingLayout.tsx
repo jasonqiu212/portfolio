@@ -27,7 +27,6 @@ function LandingLayout() {
   return (
     <>
       <NavBar />
-
       <Stack pt="94px" px={{ base: '6vw', lg: '10vw' }} gap={0}>
         <Stack mt="240px">
           <Title fz={{ base: 'md', lg: 'lg' }}>
@@ -42,7 +41,6 @@ function LandingLayout() {
             Currently a final year student @ NUS
           </Text>
         </Stack>
-
         <Group gap="lg" pt="100px">
           {contactLinks.map((link) => (
             <UnderlinedLink
@@ -53,13 +51,11 @@ function LandingLayout() {
             />
           ))}
         </Group>
-
         <Stack id="aboutMe" pt="150px">
           <Title fz={{ base: 'lg', lg: 'xl' }}>
             <span style={{ paddingRight: '12px' }}>🤗</span> about me
           </Title>
         </Stack>
-
         <Stack id="skills" pt="100px" gap="lg">
           <Title fz={{ base: 'lg', lg: 'xl' }}>
             <span style={{ paddingRight: '12px' }}>💪</span> skills
@@ -74,7 +70,11 @@ function LandingLayout() {
             </Text>
             <Group>
               {experiencedLanguages.map((skill) => (
-                <IconWithTooltip label={skill.label} iconUrl={skill.iconUrl} />
+                <IconWithTooltip
+                  key={skill.label}
+                  label={skill.label}
+                  iconUrl={skill.iconUrl}
+                />
               ))}
             </Group>
           </Stack>
@@ -84,7 +84,11 @@ function LandingLayout() {
             </Text>
             <Group>
               {experiencedFrameworksAndTools.map((skill) => (
-                <IconWithTooltip label={skill.label} iconUrl={skill.iconUrl} />
+                <IconWithTooltip
+                  key={skill.label}
+                  label={skill.label}
+                  iconUrl={skill.iconUrl}
+                />
               ))}
             </Group>
           </Stack>
@@ -94,23 +98,24 @@ function LandingLayout() {
           </Text>
           <Group>
             {familiarSkills.map((skill) => (
-              <IconWithTooltip label={skill.label} iconUrl={skill.iconUrl} />
+              <IconWithTooltip
+                key={skill.label}
+                label={skill.label}
+                iconUrl={skill.iconUrl}
+              />
             ))}
           </Group>
         </Stack>
-
         <Stack id="experience" pt="100px">
           <Title fz={{ base: 'lg', lg: 'xl' }}>
             <span style={{ paddingRight: '12px' }}>💼</span> experience
           </Title>
         </Stack>
-
         <Stack id="projects" pt="100px">
           <Title fz={{ base: 'lg', lg: 'xl' }}>
             <span style={{ paddingRight: '12px' }}>💻</span> projects
           </Title>
         </Stack>
-
         <Group justify="space-between" py="24px">
           <Title fz="md">Jason Qiu</Title>
           <Group gap="lg">
