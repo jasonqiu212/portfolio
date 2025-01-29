@@ -24,7 +24,7 @@ const theme = createTheme({
   fontFamily:
     'Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji',
   fontSizes: {
-    xs: '16px',
+    xs: '14px',
     sm: '20px',
     md: '26px',
     lg: '36px',

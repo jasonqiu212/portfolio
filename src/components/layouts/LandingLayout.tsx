@@ -1,6 +1,12 @@
 import { Group, Stack, Text, Title } from '@mantine/core';
 
 import { contactLinks } from '../../constants/ContactLinks';
+import {
+  experiencedFrameworksAndTools,
+  experiencedLanguages,
+  familiarSkills,
+} from '../../constants/Skills';
+import IconWithTooltip from '../ui/IconWithTooltip';
 import NavBar from '../ui/NavBar/NavBar';
 import UnderlinedLink from '../ui/UnderlinedLink/UnderlinedLink';
 import WavingHandEmoji from '../ui/WavingHandEmoji/WavingHandEmoji';
@@ -10,7 +16,7 @@ function LandingLayout() {
     <>
       <NavBar />
 
-      <Stack pt="94px" px={{ base: '6vw', lg: '10vw' }}>
+      <Stack pt="94px" px={{ base: '6vw', lg: '10vw' }} gap={0}>
         <Stack mt="240px">
           <Title fz={{ base: 'md', lg: 'lg' }}>
             Hey there! <WavingHandEmoji />
@@ -20,12 +26,12 @@ function LandingLayout() {
             I'm Jason, and I love to build software that helps others.
           </Title>
 
-          <Text fz={{ base: 'sm', lg: 'md' }}>
+          <Text fz={{ base: 'sm', lg: 'md' }} fw={500}>
             Currently a final year student @ NUS
           </Text>
         </Stack>
 
-        <Group gap="lg" mt="72px">
+        <Group gap="lg" pt="100px">
           {contactLinks.map((link) => (
             <UnderlinedLink
               key={link.label}
@@ -36,26 +42,59 @@ function LandingLayout() {
           ))}
         </Group>
 
-        <Stack id="aboutMe" fz={{ base: 'lg', lg: 'xl' }} pt="100px">
-          <Title>
+        <Stack id="aboutMe" pt="150px">
+          <Title fz={{ base: 'lg', lg: 'xl' }}>
             <span style={{ paddingRight: '12px' }}>🤗</span> about me
           </Title>
         </Stack>
 
-        <Stack id="skills" fz={{ base: 'lg', lg: 'xl' }} pt="100px">
-          <Title>
+        <Stack id="skills" pt="100px" gap="lg">
+          <Title fz={{ base: 'lg', lg: 'xl' }}>
             <span style={{ paddingRight: '12px' }}>💪</span> skills
           </Title>
+
+          <Text fz={{ base: 'sm', lg: 'md' }} fw={500}>
+            I am experienced in:
+          </Text>
+          <Stack gap="xs">
+            <Text fz="sm" fw={500} c="gray.6">
+              languages
+            </Text>
+            <Group>
+              {experiencedLanguages.map((skill) => (
+                <IconWithTooltip label={skill.label} iconUrl={skill.iconUrl} />
+              ))}
+            </Group>
+          </Stack>
+          <Stack gap="xs">
+            <Text fz="sm" fw={500} c="gray.6">
+              frameworks & tools
+            </Text>
+            <Group>
+              {experiencedFrameworksAndTools.map((skill) => (
+                <IconWithTooltip label={skill.label} iconUrl={skill.iconUrl} />
+              ))}
+            </Group>
+          </Stack>
+
+          <Text fz={{ base: 'sm', lg: 'md' }} fw={500}>
+            I have played around with:
+          </Text>
+          <Group>
+            {familiarSkills.map((skill) => (
+              <IconWithTooltip label={skill.label} iconUrl={skill.iconUrl} />
+            ))}
+          </Group>
         </Stack>
 
-        <Stack id="experience" fz={{ base: 'lg', lg: 'xl' }} pt="100px">
-          <Title>
+        <Stack id="experience" pt="100px">
+          <Title fz={{ base: 'lg', lg: 'xl' }}>
             <span style={{ paddingRight: '12px' }}>💼</span> experience
           </Title>
         </Stack>
 
-        <Stack id="projects" fz={{ base: 'lg', lg: 'xl' }} pt="100px">
-          <Title>
+        <Stack id="projects" pt="100px">
+          <Title fz={{ base: 'lg', lg: 'xl' }}>
             <span style={{ paddingRight: '12px' }}>💻</span> projects
           </Title>
         </Stack>

@@ -1,7 +1,7 @@
 export const navLinks = [
   {
     label: 'about me',
-    url: '#aboutme',
+    url: '#aboutMe',
   },
   {
     label: 'skills',
