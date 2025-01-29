@@ -23,6 +23,20 @@ export const experiences = [
     ],
   },
   {
+    time: 'Aug 2022 - May 2023',
+    position: 'Teaching Assistant',
+    company: {
+      label: 'National University of Singapore',
+      description: 'CS2030S Programming Methodology II',
+      url: 'https://www.nus.edu.sg/',
+    },
+    achievements: [
+      'Conducted weekly lab sessions for 12 undergraduates on object-oriented design principles and functional programming in Java',
+      'Graded assignments and provided timely feedback on code quality, correctness, and design',
+    ],
+    techStack: [icons['java'], icons['git'], icons['bash']],
+  },
+  {
     time: 'May 2022 - Aug 2022',
     position: 'Software Engineer Intern',
     company: {
