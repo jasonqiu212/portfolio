@@ -11,15 +11,10 @@ import { useWindowScroll } from '@mantine/hooks';
 import { IconChevronUp } from '@tabler/icons-react';
 
 import { contactLinks } from '../../constants/ContactLinks';
-import {
-  experiencedFrameworksAndTools,
-  experiencedLanguages,
-  familiarSkills,
-} from '../../constants/Skills';
-import IconWithTooltip from '../ui/IconWithTooltip';
 import NavBar from '../ui/NavBar/NavBar';
 import UnderlinedLink from '../ui/UnderlinedLink/UnderlinedLink';
 import WavingHandEmoji from '../ui/WavingHandEmoji/WavingHandEmoji';
+import SkillsLayout from './SkillsLayout';
 
 function LandingLayout() {
   const [scroll, scrollTo] = useWindowScroll();
@@ -51,61 +46,22 @@ function LandingLayout() {
             />
           ))}
         </Group>
-        <Stack id="aboutMe" pt="150px">
+
+        <Stack id="aboutMe" pt="150px" gap="lg">
           <Title fz={{ base: 'lg', lg: 'xl' }}>
             <span style={{ paddingRight: '12px' }}>🤗</span> about me
           </Title>
-        </Stack>
-        <Stack id="skills" pt="100px" gap="lg">
-          <Title fz={{ base: 'lg', lg: 'xl' }}>
-            <span style={{ paddingRight: '12px' }}>💪</span> skills
-          </Title>
-
           <Text fz={{ base: 'sm', lg: 'md' }} fw={500}>
-            I am experienced in:
+            Ever since my foray into computing, I’ve fallen in love with
+            building projects that both look good and do good. I have seen the
+            power of technology and how it can greatly better the lives of the
+            less privileged. I have thus been dabbling in both coding and design
+            work that make a difference.
           </Text>
-          <Stack gap="xs">
-            <Text fz="sm" fw={500} c="gray.6">
-              languages
-            </Text>
-            <Group>
-              {experiencedLanguages.map((skill) => (
-                <IconWithTooltip
-                  key={skill.label}
-                  label={skill.label}
-                  iconUrl={skill.iconUrl}
-                />
-              ))}
-            </Group>
-          </Stack>
-          <Stack gap="xs">
-            <Text fz="sm" fw={500} c="gray.6">
-              frameworks & tools
-            </Text>
-            <Group>
-              {experiencedFrameworksAndTools.map((skill) => (
-                <IconWithTooltip
-                  key={skill.label}
-                  label={skill.label}
-                  iconUrl={skill.iconUrl}
-                />
-              ))}
-            </Group>
-          </Stack>
-
-          <Text fz={{ base: 'sm', lg: 'md' }} fw={500}>
-            I have played around with:
-          </Text>
-          <Group>
-            {familiarSkills.map((skill) => (
-              <IconWithTooltip
-                key={skill.label}
-                label={skill.label}
-                iconUrl={skill.iconUrl}
-              />
-            ))}
-          </Group>
         </Stack>
+
+        <SkillsLayout />
+
         <Stack id="experience" pt="100px">
           <Title fz={{ base: 'lg', lg: 'xl' }}>
             <span style={{ paddingRight: '12px' }}>💼</span> experience
