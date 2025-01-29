@@ -90,6 +90,7 @@ function NavBar() {
                   <Anchor
                     href={link.url}
                     fz="sm"
+                    fw={500}
                     underline="never"
                     style={{ color: 'var(--mantine-text-color)' }}
                   >
