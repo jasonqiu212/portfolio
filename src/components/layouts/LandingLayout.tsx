@@ -1,5 +1,6 @@
 import { Group, Stack, Text, Title } from '@mantine/core';
 
+import { contactLinks } from '../../constants/ContactLinks';
 import NavBar from '../ui/NavBar/NavBar';
 import UnderlinedLink from '../ui/UnderlinedLink/UnderlinedLink';
 
@@ -21,22 +22,18 @@ function LandingLayout() {
           </Text>
         </Stack>
         <Group gap="lg" mt="72px">
-          <UnderlinedLink
-            label="github"
-            showUnderline
-            fz={{ base: 'sm', lg: 'md' }}
-          />
-          <UnderlinedLink
-            label="linkedin"
-            showUnderline
-            fz={{ base: 'sm', lg: 'md' }}
-          />
-          <UnderlinedLink
-            label="email"
-            showUnderline
-            fz={{ base: 'sm', lg: 'md' }}
-          />
+          {contactLinks.map((link) => (
+            <UnderlinedLink
+              key={link.label}
+              label={link.label}
+              url={link.url}
+              fz={{ base: 'sm', lg: 'md' }}
+            />
+          ))}
         </Group>
+        <Text fz={{ base: 'sm', lg: 'md' }} pt="1000px" id="sec">
+          Currently a final year student @ NUS
+        </Text>
       </Stack>
     </>
   );

@@ -5,20 +5,26 @@ import classes from './UnderlinedLink.module.css';
 
 interface UnderlinedLinkProps {
   label: string;
-  showUnderline: boolean;
+  url: string;
+  isSamePage?: boolean;
+  hideUnderline?: boolean;
   fz?: string | number | Record<string, string | number>;
 }
 
 function UnderlinedLink({
   label,
-  showUnderline,
+  url,
+  isSamePage = false,
+  hideUnderline = false,
   fz = 'md',
 }: UnderlinedLinkProps) {
   return (
     <UnstyledButton
       component="a"
+      href={url}
+      target={isSamePage ? '' : '_blank'}
       fz={fz}
-      className={showUnderline ? classes.underlinedLink : classes.link}
+      className={hideUnderline ? classes.link : classes.underlinedLink}
     >
       {label}
     </UnstyledButton>

@@ -1,4 +1,5 @@
 import {
+  Anchor,
   Burger,
   Container,
   Group,
@@ -11,23 +12,9 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 import { IconMoonFilled, IconSunFilled } from '@tabler/icons-react';
 
+import { navLinks } from '../../../constants/navLinks';
 import UnderlinedButton from '../UnderlinedLink/UnderlinedLink';
 import classes from './NavBar.module.css';
-
-const links = [
-  {
-    label: 'about me',
-  },
-  {
-    label: 'skills',
-  },
-  {
-    label: 'experience',
-  },
-  {
-    label: 'projects',
-  },
-];
 
 function NavBar() {
   const { setColorScheme } = useMantineColorScheme({ keepTransitions: true });
@@ -54,10 +41,13 @@ function NavBar() {
         <Title fz="md">Jason Qiu</Title>
         <Group gap="lg">
           <Group gap="lg" display={{ base: 'none', lg: 'flex' }}>
-            {links.map((link) => (
+            {navLinks.map((link) => (
               <UnderlinedButton
+                key={link.label}
                 label={link.label}
-                showUnderline={false}
+                url={link.url}
+                isSamePage
+                hideUnderline
                 fz="sm"
               />
             ))}
@@ -95,8 +85,17 @@ function NavBar() {
               />
             </Menu.Target>
             <Menu.Dropdown>
-              {links.map((link) => (
-                <Menu.Item>{link.label}</Menu.Item>
+              {navLinks.map((link) => (
+                <Menu.Item key={link.label}>
+                  <Anchor
+                    href={link.url}
+                    fz="sm"
+                    underline="never"
+                    style={{ color: 'var(--mantine-text-color)' }}
+                  >
+                    {link.label}
+                  </Anchor>
+                </Menu.Item>
               ))}
             </Menu.Dropdown>
           </Menu>
