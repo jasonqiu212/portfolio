@@ -1,4 +1,14 @@
-import { Group, Stack, Text, Title } from '@mantine/core';
+import {
+  ActionIcon,
+  Affix,
+  Group,
+  Stack,
+  Text,
+  Title,
+  Transition,
+} from '@mantine/core';
+import { useWindowScroll } from '@mantine/hooks';
+import { IconChevronUp } from '@tabler/icons-react';
 
 import { contactLinks } from '../../constants/ContactLinks';
 import {
@@ -12,6 +22,8 @@ import UnderlinedLink from '../ui/UnderlinedLink/UnderlinedLink';
 import WavingHandEmoji from '../ui/WavingHandEmoji/WavingHandEmoji';
 
 function LandingLayout() {
+  const [scroll, scrollTo] = useWindowScroll();
+
   return (
     <>
       <NavBar />
@@ -113,6 +125,28 @@ function LandingLayout() {
           </Group>
         </Group>
       </Stack>
+
+      <Affix position={{ bottom: 20, right: 20 }}>
+        <Transition transition="slide-up" mounted={scroll.y > 0}>
+          {(transitionStyles) => (
+            <ActionIcon
+              size={50}
+              variant="filled"
+              radius="xl"
+              style={transitionStyles}
+              onClick={() => scrollTo({ y: 0 })}
+              styles={{
+                icon: {
+                  background: 'var(--mantine-color-text)',
+                  color: 'light-dark(#fff, #000)',
+                },
+              }}
+            >
+              <IconChevronUp size={30} />
+            </ActionIcon>
+          )}
+        </Transition>
+      </Affix>
     </>
   );
 }
