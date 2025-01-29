@@ -3,12 +3,12 @@ import '@mantine/core/styles.css';
 
 import classes from './UnderlinedLink.module.css';
 
-interface UnderlinedButtonProps {
+interface UnderlinedLinkProps {
   label: string;
   showUnderline: boolean;
 }
 
-function UnderlinedButton({ label, showUnderline }: UnderlinedButtonProps) {
+function UnderlinedLink({ label, showUnderline }: UnderlinedLinkProps) {
   return (
     <UnstyledButton
       component="a"
@@ -19,4 +19,4 @@ function UnderlinedButton({ label, showUnderline }: UnderlinedButtonProps) {
   );
 }
 
-export default UnderlinedButton;
+export default UnderlinedLink;
