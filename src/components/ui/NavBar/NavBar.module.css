@@ -2,6 +2,10 @@
   background-color: var(--mantine-color-body);
 }
 
+.item {
+  color: var(--mantine-color-text);
+}
+
 .item:hover {
   background-color: light-dark(
     var(--mantine-color-gray-2),
@@ -10,6 +14,6 @@
 }
 
 .itemLabel {
-  font-size: 18px;
+  font-size: var(--mantine-font-size-sm);
   font-weight: 600;
 }

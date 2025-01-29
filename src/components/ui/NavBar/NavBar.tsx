@@ -1,5 +1,4 @@
 import {
-  Anchor,
   Burger,
   Container,
   Group,
@@ -86,16 +85,8 @@ function NavBar() {
             </Menu.Target>
             <Menu.Dropdown>
               {navLinks.map((link) => (
-                <Menu.Item key={link.label}>
-                  <Anchor
-                    href={link.url}
-                    fz="sm"
-                    fw={500}
-                    underline="never"
-                    style={{ color: 'var(--mantine-text-color)' }}
-                  >
-                    {link.label}
-                  </Anchor>
+                <Menu.Item key={link.label} component="a" href={link.url}>
+                  {link.label}
                 </Menu.Item>
               ))}
             </Menu.Dropdown>
