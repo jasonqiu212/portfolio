@@ -23,6 +23,13 @@ const theme = createTheme({
   },
   fontFamily:
     'Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji',
+  fontSizes: {
+    xs: '16px',
+    sm: '20px',
+    md: '26px',
+    lg: '36px',
+    xl: '50px',
+  },
   headings: {
     fontFamily:
       'Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji',

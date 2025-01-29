@@ -51,7 +51,7 @@ function NavBar() {
       }}
     >
       <Group justify="space-between">
-        <Title variant="default">Jason Qiu</Title>
+        <Title fz="md">Jason Qiu</Title>
         <Group gap="lg">
           <Group gap="lg" display={{ base: 'none', lg: 'flex' }}>
             {links.map((link) => (
