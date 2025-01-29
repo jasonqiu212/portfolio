@@ -9,7 +9,7 @@ import IconWithTooltip from '../ui/IconWithTooltip';
 
 function SkillsLayout() {
   return (
-    <Stack id="skills" pt="100px" gap="36px">
+    <Stack id="skills" pt="100px" gap="45px">
       <Title fz={{ base: 'lg', lg: 'xl' }}>
         <span style={{ paddingRight: '12px' }}>💪</span> skills
       </Title>

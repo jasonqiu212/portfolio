@@ -11,6 +11,8 @@ import { useWindowScroll } from '@mantine/hooks';
 import { IconChevronUp } from '@tabler/icons-react';
 
 import { contactLinks } from '../../constants/ContactLinks';
+import { experiences } from '../../constants/Experiences';
+import Experience from '../ui/Experience';
 import NavBar from '../ui/NavBar/NavBar';
 import UnderlinedLink from '../ui/UnderlinedLink/UnderlinedLink';
 import WavingHandEmoji from '../ui/WavingHandEmoji/WavingHandEmoji';
@@ -62,16 +64,21 @@ function LandingLayout() {
 
         <SkillsLayout />
 
-        <Stack id="experience" pt="100px">
+        <Stack id="experience" pt="100px" gap="45px">
           <Title fz={{ base: 'lg', lg: 'xl' }}>
             <span style={{ paddingRight: '12px' }}>💼</span> experience
           </Title>
+          {experiences.map((experience, i) => (
+            <Experience key={i} experience={experience} />
+          ))}
         </Stack>
+
         <Stack id="projects" pt="100px">
           <Title fz={{ base: 'lg', lg: 'xl' }}>
             <span style={{ paddingRight: '12px' }}>💻</span> projects
           </Title>
         </Stack>
+
         <Group justify="space-between" py="24px">
           <Title fz="md">Jason Qiu</Title>
           <Group gap="lg">

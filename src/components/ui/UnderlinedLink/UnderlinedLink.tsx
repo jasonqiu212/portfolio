@@ -9,6 +9,7 @@ interface UnderlinedLinkProps {
   isSamePage?: boolean;
   hideUnderline?: boolean;
   fz?: string | number | Record<string, string | number>;
+  fw?: number;
 }
 
 function UnderlinedLink({
@@ -17,6 +18,7 @@ function UnderlinedLink({
   isSamePage = false,
   hideUnderline = false,
   fz = 'md',
+  fw = 600,
 }: UnderlinedLinkProps) {
   return (
     <UnstyledButton
@@ -24,6 +26,7 @@ function UnderlinedLink({
       href={url}
       target={isSamePage ? '' : '_blank'}
       fz={fz}
+      fw={fw}
       className={hideUnderline ? classes.link : classes.underlinedLink}
     >
       {label}
