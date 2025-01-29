@@ -11,7 +11,7 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 import { IconMoonFilled, IconSunFilled } from '@tabler/icons-react';
 
-import UnderlinedButton from '../UnderlinedButton/UnderlinedButton';
+import UnderlinedButton from '../UnderlinedLink/UnderlinedLink';
 import classes from './NavBar.module.css';
 
 const links = [
