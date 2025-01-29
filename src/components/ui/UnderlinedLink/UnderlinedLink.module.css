@@ -1,15 +1,16 @@
-.button {
+.link,
+.underlinedLink {
   font-weight: 600;
   font-size: 20px;
   display: inline-block;
   position: relative;
 }
 
-.button::after {
+.link::after,
+.underlinedLink::after {
   content: '';
   position: absolute;
   width: 100%;
-  transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
@@ -18,7 +19,23 @@
   transition: transform 0.25s ease-out;
 }
 
-.button:hover::after {
-  transform: scaleX(1);
+.link:hover::after,
+.underlinedLink:hover::after {
   transform-origin: bottom center;
+}
+
+.link::after {
+  transform: scaleX(0);
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+}
+
+.underlinedLink::after {
+  transform: scaleX(1);
+}
+
+.underlinedLink:hover::after {
+  transform: scaleX(0);
 }

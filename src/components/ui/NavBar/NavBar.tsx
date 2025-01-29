@@ -55,7 +55,7 @@ function NavBar() {
         <Group gap="lg">
           <Group gap="lg" display={{ base: 'none', lg: 'flex' }}>
             {links.map((link) => (
-              <UnderlinedButton label={link.label} />
+              <UnderlinedButton label={link.label} showUnderline={false} />
             ))}
           </Group>
 

@@ -5,11 +5,15 @@ import classes from './UnderlinedLink.module.css';
 
 interface UnderlinedButtonProps {
   label: string;
+  showUnderline: boolean;
 }
 
-function UnderlinedButton({ label }: UnderlinedButtonProps) {
+function UnderlinedButton({ label, showUnderline }: UnderlinedButtonProps) {
   return (
-    <UnstyledButton component="a" className={classes.button}>
+    <UnstyledButton
+      component="a"
+      className={showUnderline ? classes.underlinedLink : classes.link}
+    >
       {label}
     </UnstyledButton>
   );
