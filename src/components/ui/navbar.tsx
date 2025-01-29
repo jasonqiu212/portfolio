@@ -3,11 +3,12 @@ import {
   Container,
   Group,
   Title,
-  UnstyledButton,
   useComputedColorScheme,
   useMantineColorScheme,
 } from '@mantine/core';
 import { IconMoon, IconSun } from '@tabler/icons-react';
+
+import UnderlinedButton from './UnderlinedButton/UnderlinedButton';
 
 function NavBar() {
   const { setColorScheme } = useMantineColorScheme();
@@ -26,9 +27,10 @@ function NavBar() {
       <Group justify="space-between">
         <Title variant="default">Jason Qiu</Title>
         <Group>
-          <UnstyledButton component="a">about me</UnstyledButton>
-          <UnstyledButton component="a">skills</UnstyledButton>
-          <UnstyledButton component="a">experience</UnstyledButton>
+          <UnderlinedButton label="about me" />
+          <UnderlinedButton label="skills" />
+          <UnderlinedButton label="experience" />
+          <UnderlinedButton label="projects" />
 
           <ActionIcon
             variant="default"
