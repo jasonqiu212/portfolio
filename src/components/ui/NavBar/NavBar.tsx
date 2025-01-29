@@ -12,7 +12,7 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 import { IconMoonFilled, IconSunFilled } from '@tabler/icons-react';
 
-import { navLinks } from '../../../constants/navLinks';
+import { navLinks } from '../../../constants/NavLinks';
 import UnderlinedButton from '../UnderlinedLink/UnderlinedLink';
 import classes from './NavBar.module.css';
 
@@ -29,7 +29,7 @@ function NavBar() {
       w="100%"
       h="70px"
       px={{ base: '6vw', lg: '10vw' }}
-      pt="20px"
+      pt="24px"
       maw="unset"
       style={{
         alignContent: 'center',
