@@ -12,38 +12,14 @@ export const experiences = [
       'Piloted LLM-powered chatbot using prompt engineering for directing new users to bank products',
     ],
     techStack: [
-      {
-        label: 'TypeScript',
-        iconUrl: icons['TypeScript'],
-      },
-      {
-        label: 'React',
-        iconUrl: icons['React'],
-      },
-      {
-        label: 'Redux',
-        iconUrl: icons['Redux'],
-      },
-      {
-        label: 'Axios',
-        iconUrl: icons['Axios'],
-      },
-      {
-        label: 'Jest',
-        iconUrl: icons['Jest'],
-      },
-      {
-        label: 'Git',
-        iconUrl: icons['Git'],
-      },
-      {
-        label: 'Jenkins',
-        iconUrl: icons['Jenkins'],
-      },
-      {
-        label: 'SonarQube',
-        iconUrl: icons['SonarQube'],
-      },
+      icons['typescript'],
+      icons['react'],
+      icons['redux'],
+      icons['axios'],
+      icons['jest'],
+      icons['git'],
+      icons['jenkins'],
+      icons['sonarqube'],
     ],
   },
   {
@@ -61,11 +37,16 @@ export const experiences = [
       'Implemented activity registration feature for senior activity booking app with an elderly-centric UI',
     ],
     techStack: [
-      {
-        label: 'React',
-        iconUrl:
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
-      },
+      icons['typescript'],
+      icons['react'],
+      icons['redux'],
+      icons['mui'],
+      icons['ionic'],
+      icons['rubyOnRails'],
+      icons['postgresql'],
+      icons['mysql'],
+      icons['git'],
+      icons['docker'],
     ],
   },
 ];
