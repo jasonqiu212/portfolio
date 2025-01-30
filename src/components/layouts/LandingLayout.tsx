@@ -12,8 +12,10 @@ import { IconChevronUp } from '@tabler/icons-react';
 
 import { contactLinks } from '../../constants/ContactLinks';
 import { experiences } from '../../constants/Experiences';
+import { projects } from '../../constants/Projects';
 import Experience from '../ui/Experience';
 import NavBar from '../ui/NavBar/NavBar';
+import Project from '../ui/Project/Project';
 import UnderlinedLink from '../ui/UnderlinedLink/UnderlinedLink';
 import WavingHandEmoji from '../ui/WavingHandEmoji/WavingHandEmoji';
 import SkillsLayout from './SkillsLayout';
@@ -73,10 +75,13 @@ function LandingLayout() {
           ))}
         </Stack>
 
-        <Stack id="projects" pt="100px">
+        <Stack id="projects" pt="100px" gap="45px">
           <Title fz={{ base: 'lg', lg: 'xl' }}>
             <span style={{ paddingRight: '12px' }}>💻</span> projects
           </Title>
+          {projects.map((project, i) => (
+            <Project key={i} project={project} />
+          ))}
         </Stack>
 
         <Group justify="space-between" py="24px">

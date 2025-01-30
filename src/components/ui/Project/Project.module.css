@@ -1,0 +1,10 @@
+.tiltEffect {
+  transition: transform 0.3s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Don't show hover effect if a user’s device settings are set to reduced motion */
+  .tiltEffect:hover {
+    transform: none;
+  }
+}
