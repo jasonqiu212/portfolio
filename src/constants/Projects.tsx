@@ -1,5 +1,6 @@
 import HaveAnot from '../assets/haveanot.png';
 import PeerPrep from '../assets/peerprep.png';
+import Teammates from '../assets/teammates.png';
 import { icons } from './Icons';
 
 export const projects = [
@@ -15,6 +16,7 @@ export const projects = [
       icons['react'],
       icons['mantine'],
       icons['langchain'],
+      icons['git'],
     ],
     links: ['github.com'],
     imageUrl: HaveAnot,
@@ -23,9 +25,30 @@ export const projects = [
     name: 'TEAMMATES',
     url: 'https://teammatesv4.appspot.com/web/front/home',
     descriptions: [
-      'An open source peer evaluation website used by over 1,100 universities.',
+      'An open source peer evaluation website used by over 1 million users and 1,100 universities.',
     ],
     techStack: [icons['typescript'], icons['angular'], icons['java']],
+    links: ['github.com'],
+    imageUrl: Teammates,
+  },
+  {
+    name: 'PeerPrep',
+    url: 'https://peerprep.zoeang.dev/',
+    descriptions: [
+      'A platform for programmers to practice technical interviews by matching with others to practice LeetCode questions. Features include collaborative coding pad, code execution, video calling, and storage of practice attempts.',
+    ],
+    techStack: [
+      icons['typescript'],
+      icons['react'],
+      icons['mantine'],
+      icons['socketio'],
+      icons['axios'],
+      icons['express'],
+      icons['mongodb'],
+      icons['mongoose'],
+      icons['docker'],
+      icons['git'],
+    ],
     links: ['github.com'],
     imageUrl: PeerPrep,
   },

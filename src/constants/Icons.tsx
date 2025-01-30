@@ -64,6 +64,16 @@ export const icons = {
     iconUrl:
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
   },
+  mongodb: {
+    label: 'MongoDB',
+    iconUrl:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
+  },
+  mongoose: {
+    label: 'Mongoose',
+    iconUrl:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg',
+  },
   redux: {
     label: 'Redux',
     iconUrl:
@@ -92,6 +102,16 @@ export const icons = {
     label: 'Jest',
     iconUrl:
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
+  },
+  socketio: {
+    label: 'Socket.IO',
+    iconUrl:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg',
+  },
+  express: {
+    label: 'Express',
+    iconUrl:
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
   },
 
   // Tools
