@@ -18,7 +18,7 @@ export const projects = [
       icons['langchain'],
       icons['git'],
     ],
-    links: ['github.com'],
+    links: [],
     imageUrl: HaveAnot,
   },
   {
@@ -27,8 +27,19 @@ export const projects = [
     descriptions: [
       'An open source peer evaluation website used by over 1 million users and 1,100 universities.',
     ],
-    techStack: [icons['typescript'], icons['angular'], icons['java']],
-    links: ['github.com'],
+    techStack: [
+      icons['typescript'],
+      icons['angular'],
+      icons['java'],
+      icons['docker'],
+      icons['git'],
+    ],
+    links: [
+      {
+        label: 'View the code on GitHub',
+        url: 'https://github.com/TEAMMATES/teammates',
+      },
+    ],
     imageUrl: Teammates,
   },
   {
@@ -49,7 +60,12 @@ export const projects = [
       icons['docker'],
       icons['git'],
     ],
-    links: ['github.com'],
+    links: [
+      {
+        label: 'View the code on GitHub',
+        url: 'https://github.com/CS3219-AY2425S1/cs3219-ay2425s1-project-g39',
+      },
+    ],
     imageUrl: PeerPrep,
   },
 ];

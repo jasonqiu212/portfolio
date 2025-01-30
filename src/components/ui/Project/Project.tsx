@@ -11,7 +11,7 @@ interface ProjectProps {
     url?: string;
     descriptions: string[];
     techStack: { label: string; iconUrl: string }[];
-    links: string[];
+    links: { label: string; url: string }[];
     imageUrl: string;
   };
 }
@@ -56,6 +56,9 @@ function Project({ project }: ProjectProps) {
             <Text key={i} fz="sm" fw={500}>
               {description}
             </Text>
+          ))}
+          {project.links.map((link, i) => (
+            <UnderlinedLink key={i} label={link.label} url={link.url} fz="sm" />
           ))}
           <Text fz="sm" fw={500} c="gray.6">
             Tech Stack
