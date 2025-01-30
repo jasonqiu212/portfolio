@@ -33,6 +33,7 @@ function NavBar() {
       style={{
         alignContent: 'center',
         backdropFilter: 'blur(10px)',
+        WebkitBackdropFilter: 'blur(10px)',
         zIndex: 2,
       }}
     >
