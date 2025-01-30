@@ -1,39 +1,26 @@
 .link,
 .underlinedLink {
-  display: inline-block;
-  position: relative;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in-out;
 }
 
-.link::after,
-.underlinedLink::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--mantine-color-text);
-  transform-origin: bottom center;
-  transition: transform 0.25s ease-out;
+.link {
+  background-size: 0% 2px;
 }
 
-.link:hover::after,
-.underlinedLink:hover::after {
-  transform-origin: bottom center;
+.underlinedLink {
+  background-size: 100% 2px;
 }
 
-.link::after {
-  transform: scaleX(0);
+.link:hover,
+.link:focus {
+  background-size: 100% 2px;
 }
 
-.link:hover::after {
-  transform: scaleX(1);
-}
-
-.underlinedLink::after {
-  transform: scaleX(1);
-}
-
-.underlinedLink:hover::after {
-  transform: scaleX(0);
+.underlinedLink:hover,
+.underlinedLink:focus {
+  background-size: 0% 2px;
 }
