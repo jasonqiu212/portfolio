@@ -1,5 +1,6 @@
 .tiltEffect {
   transition: transform 0.3s ease-out;
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
 @media (prefers-reduced-motion: reduce) {
