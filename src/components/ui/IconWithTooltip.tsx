@@ -15,6 +15,7 @@ function IconWithTooltip({ label, iconUrl }: IconWithTooltipProps) {
       fz="xs"
       fw={500}
       c="gray.6"
+      events={{ hover: true, focus: false, touch: true }}
       transitionProps={{ transition: 'slide-down', duration: 300 }}
     >
       <Image w="40px" src={iconUrl} />
