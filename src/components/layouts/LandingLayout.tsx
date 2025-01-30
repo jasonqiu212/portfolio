@@ -101,6 +101,7 @@ function LandingLayout() {
               size={50}
               variant="filled"
               radius="xl"
+              bd={0}
               style={transitionStyles}
               onClick={() => scrollTo({ y: 0 })}
               styles={{
