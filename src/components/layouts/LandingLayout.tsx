@@ -84,7 +84,7 @@ function LandingLayout() {
           ))}
         </Stack>
 
-        <Group justify="space-between" py="24px">
+        <Group justify="space-between" pt="100px" pb="48px">
           <Title fz="md">Jason Qiu</Title>
           <Group gap="lg">
             {contactLinks.map((link) => (
