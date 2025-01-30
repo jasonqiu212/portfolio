@@ -30,12 +30,7 @@ function NavBar() {
       px={{ base: '6vw', lg: '10vw' }}
       pt="24px"
       maw="unset"
-      style={{
-        alignContent: 'center',
-        backdropFilter: 'blur(10px)',
-        WebkitBackdropFilter: 'blur(10px)',
-        zIndex: 2,
-      }}
+      className={classes.container}
     >
       <Group justify="space-between">
         <Title fz="md">Jason Qiu</Title>
