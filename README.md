@@ -1,12 +1,14 @@
 <h1 align="center">
-  Jason's Portfolio
+  Jason's Portfolio Website
 </h1>
+
 <p align="center">
-  <a href="https://jasonqiu.dev" target="_blank">jasonqiu.dev</a><br>
-  Built with React and Mantine
+  <a href="https://jasonqiu.dev" target="_blank">jasonqiu.dev</a>
 </p>
 
-![portfolio](docs/demo.png)
+<a href="https://jasonqiu.dev" target="_blank">
+  <img src="docs/demo.png" alt="portfolio" />
+</a>
 
 ## 🛠️ Installation & Setup
 
