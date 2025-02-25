@@ -1,8 +1,14 @@
-# Jason's Portfolio
+<h1 align="center">
+  Jason's Portfolio
+</h1>
+<p align="center">
+  <a href="https://jasonqiu.dev" target="_blank">jasonqiu.dev</a><br>
+  Built with React and Mantine
+</p>
 
-## Getting Started
+![portfolio](docs/demo.png)
 
-1. Clone this repository.
+## 🛠️ Installation & Setup
 
 ```
 git clone https://github.com/jasonqiu212/portfolio.git
