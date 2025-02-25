@@ -37,7 +37,7 @@ function LandingLayout() {
           </Title>
 
           <Text fz={{ base: 'sm', lg: 'md' }} fw={500}>
-            Currently a final year student @ NUS
+            Currently a final year CS student @ NUS
           </Text>
         </Stack>
         <Group gap="lg" pt="100px">
@@ -56,11 +56,13 @@ function LandingLayout() {
             <span style={{ paddingRight: '12px' }}>🤗</span> about me
           </Title>
           <Text fz={{ base: 'sm', lg: 'md' }} fw={500}>
-            Ever since my foray into computing, I’ve fallen in love with
-            building projects that both look good and do good. I have seen the
-            power of technology and how it can greatly better the lives of the
-            less privileged. I have thus been dabbling in both coding and design
-            work that make a difference.
+            As a developer, I love building beautiful apps that make a
+            difference. I'm passionate about blending robust software
+            engineering with thoughtful design to solve real-world problems.
+          </Text>
+          <Text fz={{ base: 'sm', lg: 'md' }} fw={500}>
+            When I'm not coding, you'll probably find me playing volleyball,
+            tennis, gazing at green spaces, or diving into a good book.
           </Text>
         </Stack>
 
