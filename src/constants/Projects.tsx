@@ -30,6 +30,7 @@ export const projects = [
     techStack: [
       icons['typescript'],
       icons['angular'],
+      icons['jest'],
       icons['java'],
       icons['docker'],
       icons['git'],
