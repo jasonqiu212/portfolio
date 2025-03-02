@@ -10,7 +10,13 @@
   <img src="docs/demo.png" alt="portfolio" />
 </a>
 
+## 🥞 Tech Stack
+
+Built with [React](https://react.dev/) and [Mantine](https://mantine.dev/), deployed with [Vercel](https://vercel.com/).
+
 ## 🛠️ Installation & Setup
+
+1. Clone the project repository.
 
 ```
 git clone https://github.com/jasonqiu212/portfolio.git
