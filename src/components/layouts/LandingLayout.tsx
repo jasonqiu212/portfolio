@@ -37,7 +37,7 @@ function LandingLayout() {
           </Title>
 
           <Text fz={{ base: 'sm', lg: 'md' }} fw={500}>
-            Currently a final year CS student @ NUS
+            Currently a Software Engineer @ Shopee
           </Text>
         </Stack>
         <Group gap="lg" pt="100px">
