@@ -26,11 +26,11 @@ cd portfolio
 2. Install the necessary packages.
 
 ```
-npm install
+pnpm install
 ```
 
 3. Start the development server.
 
 ```
-npm run dev
+pnpm dev
 ```
