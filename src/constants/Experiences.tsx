@@ -2,6 +2,24 @@ import { icons } from './Icons';
 
 export const experiences = [
   {
+    time: 'Jun 2024 - Present',
+    position: 'Software Engineer',
+    company: { label: 'Shopee', url: 'https://shopee.sg/' },
+    achievements: [
+      'Optimized internal report center architecture by migrating snapshot data from MySQL to S3, reducing database overhead while improving page load time by 87%',
+      'Enhanced a reusable product card SDK used across multiple Shopee webpages, supporting consistent product presentation and shared FE capabilities across teams',
+      'Built guardrails for an AI development framework using Claude hooks and skills, enabling PMs to safely deliver 66 internal portal features with an 89% AI-generated code acceptance rate',
+      'Developed FE features for new voucher types across seller- and operator-facing voucher creation platforms',
+    ],
+    techStack: [
+      icons['typescript'],
+      icons['react'],
+      icons['express'],
+      icons['mysql'],
+      icons['git'],
+    ],
+  },
+  {
     time: 'May 2024 - Aug 2024',
     position: 'Software Engineer Intern',
     company: { label: 'HSBC', url: 'https://www.hsbc.com.sg/' },
